@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <script defer type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Lista de Usuarios</h1>
+        <div id="container">
+            <table id="userTable" class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                    
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="mt-5">Añadir Usuario</h2>
+        <form id="addUserForm">
+            <div class="form-row">
+                <input type="hidden" id="id" name="id" value="">
+
+                <div class="form-group col-md-2">
+                    <label for="firstName">Nombre:</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                
+            </div>
+            <button type="submit" class="btn btn-primary">Añadir Usuario</button>
+        </form>
+
+        <form id="editUserForm" class="d-none">
+            <h2 class="mt-5">Actualizar Usuario</h2>
+
+            <div class="form-group">
+                <label for="editFirstName">Nombre:</label>
+                <input type="text" class="form-control" id="editFirstName">
+            </div>
+            <div class="form-group">
+                <label for="editLastName">Apellido:</label>
+                <input type="text" class="form-control" id="editLastName">
+            </div>
+            <div class="form-group">
+                <label for="editEmail">Email:</label>
+                <input type="email" class="form-control" id="editEmail">
+            </div>
+            <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
+        </form>
+        
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
